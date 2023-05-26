@@ -1,0 +1,34 @@
+{
+    "colors": [
+        {
+            "id": 1,
+            "colorMode": "warm",
+            "color": "Red"
+        },
+        {
+            "id": 2,
+            "colorMode": "warm",
+            "color": "Orange"
+        },
+        {
+            "id": 3,
+            "colorMode": "warm",
+            "color": "Yellow"
+        },
+        {
+            "id": 4,
+            "colorMode": "cool",
+            "color": "Blue"
+        },
+        {
+            "id": 5,
+            "colorMode": "cool",
+            "color": "Green"
+        },
+        {
+            "id": 6,
+            "colorMode": "cool",
+            "color": "Purple"
+        }
+    ]
+}
