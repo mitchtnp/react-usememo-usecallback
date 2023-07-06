@@ -11,6 +11,12 @@ const reducer = (state, action) => {
                 icon: action.icon,
             };
         }
+        case actionTypes.SCORE_SET: {
+            return {
+                ...state,
+                score: action.score,
+            };
+        }
         default: {
             return { ...state };
         }

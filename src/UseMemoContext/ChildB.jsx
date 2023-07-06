@@ -1,12 +1,16 @@
 import { useContext } from "react";
 import styled from "styled-components";
 
-import { IconContext } from "./IconContext/IconContextProvider";
+import IconContext from "./IconContext";
 
 const ChildB = () => {
     console.log("Render Child B");
 
     const { icon } = useContext(IconContext);
+
+    if (!icon || !icon.id) {
+        return "Loading...";
+    }
 
     return (
         <ChildBStyled className="ChildB">

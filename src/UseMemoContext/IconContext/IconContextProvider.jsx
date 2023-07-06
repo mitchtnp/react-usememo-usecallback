@@ -1,18 +1,26 @@
-import { createContext, useState } from "react";
+import { useReducer, useEffect } from "react";
 
-export const IconContext = createContext();
+import IconContext from "./index";
+import reducer from "./reducer";
+import { setIcon } from "./actions";
 
 const IconContextProvider = ({ icon = {}, children }) => {
-    const [score, setScore] = useState(0);
-
-    const value = {
-        icon,
-        score,
-        setScore,
+    const defaultState = {
+        icon: icon,
+        score: 0,
     };
 
+    const [state, dispatch] = useReducer(reducer, defaultState);
+
+    useEffect(() => {
+        dispatch(setIcon(icon));
+    }, [icon]);
+
     return (
-        <IconContext.Provider value={value} displayName="Icon useMemo Context">
+        <IconContext.Provider
+            value={{ state, dispatch }}
+            displayName="Icon useMemo Context"
+        >
             {children}
         </IconContext.Provider>
     );

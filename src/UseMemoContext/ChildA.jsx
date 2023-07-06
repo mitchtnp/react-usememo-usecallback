@@ -1,11 +1,15 @@
 import { useContext } from "react";
 import styled from "styled-components";
-import { IconContext } from "./IconContext/IconContextProvider";
+import IconContext from "./IconContext/index";
+import { setScore } from "./IconContext/actions";
 
 const ChildA = () => {
     console.log("Render Child A");
 
-    const { score, setScore } = useContext(IconContext);
+    const {
+        state: { score },
+        dispatch,
+    } = useContext(IconContext);
 
     return (
         <ChildAStyled className="ChildA">
@@ -13,7 +17,7 @@ const ChildA = () => {
 
             <button
                 onClick={() => {
-                    setScore((score) => score + 1);
+                    dispatch(setScore((score) => score + 1));
                 }}
             >
                 Score: {score}
