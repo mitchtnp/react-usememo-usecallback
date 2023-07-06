@@ -5,6 +5,7 @@ import { BrowserRouter as ReactRouterDomProvider, Routes, Route } from 'react-ro
 import Nav from './Nav';
 import UseMemo from './UseMemo';
 import UseCallback from './UseCallback';
+import UseMemoContext from './UseMemoContext';
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
                 <Routes>
                     <Route element={<UseMemo />} path="" />
                     <Route element={<UseCallback />} path="/usecallback" />
+                    <Route element={<UseMemoContext />} path="/useMemoContext" />
                 </Routes>
             </AppStyled>
         </ReactRouterDomProvider>

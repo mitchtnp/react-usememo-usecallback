@@ -6,6 +6,7 @@ const Nav = () => {
         <NavStyled className='Nav'>
             <NavLink to='/' end>useMemo</NavLink>
             <NavLink to='/usecallback'>useCallback</NavLink>
+            <NavLink to='/useMemoContext'>useMemo Context</NavLink>
         </NavStyled>
     );
 }
@@ -16,7 +17,7 @@ const NavStyled = styled.nav`
     margin-bottom: 10px;
     a {
         display: inline-block;
-        width: 150px;
+        width: 200px;
         line-height: 50px;
         background-color: teal;
         color: white;

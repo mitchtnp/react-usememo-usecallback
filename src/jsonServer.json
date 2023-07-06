@@ -30,5 +30,86 @@
             "colorMode": "cool",
             "color": "Purple"
         }
+    ],
+    "icons": [
+        {
+            "id": "14252",
+            "title": "Freddy Krueger",
+            "creator": {
+                "name": "Icons8",
+                "id": "80447",
+                "username": "visualpharm",
+                "avatarUrl": "https://static.test.thenounproject.com/avatars/80447/resized/80/80/nounavatar.png",
+                "country": "US",
+                "__typename": "CreatorProfileType"
+            },
+            "thumbnails": {
+                "thumbnail84": "https://static.test.thenounproject.com/png/14252-84.png",
+                "thumbnail200": "https://static.test.thenounproject.com/png/14252-200.png",
+                "__typename": "IconThumbnailsType"
+            },
+            "slugWithId": "freddy-krueger-14252",
+            "__typename": "IconType",
+            "licenseDescription": "PUBLICDOMAIN",
+            "assets": {
+                "attribution600": null,
+                "__typename": "IconAssetsType"
+            },
+            "countDownload": 0,
+            "createdAt": "2013-03-26",
+            "uploadState": 0,
+            "tags": [
+                {
+                    "name": "Freddy Krueger",
+                    "slug": "freddy-krueger",
+                    "__typename": "TermType"
+                },
+                {
+                    "name": "Head",
+                    "slug": "head",
+                    "__typename": "TermType"
+                },
+                {
+                    "name": "horror",
+                    "slug": "horror",
+                    "__typename": "TermType"
+                },
+                {
+                    "name": "evil",
+                    "slug": "evil",
+                    "__typename": "TermType"
+                },
+                {
+                    "name": "villian",
+                    "slug": "villian",
+                    "__typename": "TermType"
+                },
+                {
+                    "name": "Monster",
+                    "slug": "monster",
+                    "__typename": "TermType"
+                },
+                {
+                    "name": "scary",
+                    "slug": "scary",
+                    "__typename": "TermType"
+                },
+                {
+                    "name": "hat",
+                    "slug": "hat",
+                    "__typename": "TermType"
+                }
+            ],
+            "iconCollections": [
+                {
+                    "order": 7,
+                    "collection": {
+                        "name": "Faces of Evil",
+                        "__typename": "CollectionType"
+                    },
+                    "__typename": "CollectionIconTypeFromIcon"
+                }
+            ]
+        }
     ]
 }
