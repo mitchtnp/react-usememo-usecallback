@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 
 import { IconContext } from "./IconContext/IconContextProvider";
@@ -16,6 +16,6 @@ const ChildB = () => {
     );
 };
 
-export default ChildB;
+export default React.memo(ChildB);
 
 const ChildBStyled = styled.div``;
